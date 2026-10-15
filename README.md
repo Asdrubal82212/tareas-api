@@ -27,3 +27,24 @@ La API queda en `http://localhost:8080/api/tasks`.
 | POST | /api/tasks | Crear tarea |
 | PUT | /api/tasks/{id} | Actualizar tarea |
 | DELETE | /api/tasks/{id} | Eliminar tarea |
+## Microservicio de movimiento (Flask)
+
+Requiere Python 3.
+
+```bash
+cd movimiento
+python3 -m venv venv
+source venv/bin/activate
+pip install flask flask-cors
+python app.py
+```
+
+Corre en `http://localhost:5001`.
+
+| Orden | Código |
+|---|---|
+| adelante | 01 |
+| atras | 02 |
+| izquierda | 03 |
+| derecha | 04 |
+| detener | 05 |
